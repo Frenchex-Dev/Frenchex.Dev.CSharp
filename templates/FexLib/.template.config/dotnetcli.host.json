@@ -1,0 +1,16 @@
+{
+    "symbolInfo": {
+      "copyright": {
+        "longName": "copyright",
+        "shortName": "copy"
+      },
+      "namespace": {
+        "longName": "namespace",
+        "shortName": "ns"
+      },
+      "project-name": {
+        "longName": "project",
+        "shortName": "p"
+      }
+    }
+  }

@@ -1,0 +1,1 @@
+Import-Module $PSScriptRoot/src/FrenchexDev.psm1 -Force

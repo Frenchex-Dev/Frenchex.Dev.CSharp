@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Stéphane Erard",
+    "classifications": [ "FrenchexDev", "Lib" ],
+    "identity": "fex:lib",
+    "name": ".NET FrenchexDev Lib project",
+    "shortName": "fex:lib",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "symbols":{
+      "copyright": {
+        "type": "parameter",
+        "defaultValue": "John Smith",
+        "replaces":"(copyright)"
+      },
+      "namespace": {
+        "type": "parameter",
+        "defaultValue": "Your namespace",
+        "replaces":"(namespace)"
+      },
+      "project-name": {
+        "type": "parameter",
+        "defaultValue": "Your Project Name",
+        "replaces":"(project-name)"
+      }
+    }
+  }

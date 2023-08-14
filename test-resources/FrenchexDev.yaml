@@ -1,0 +1,103 @@
+solution:
+  name: Frenchex.Dev
+  global:
+    sdkVersion: 7.0.400
+
+projects:
+  - name: Frenchex.Dev.Filesystem.Lib
+    language: "C#"
+    template: "fex:lib"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib"
+    packages:
+      - name: Microsoft.Extensions.DependencyInjection.Abstractions
+        version: 7.0.0
+    projects:
+      - name: Frenchex.Dev.Filesystem.Lib.Domain
+      - name: Frenchex.Dev.Filesystem.Lib.Infrastructure
+    solutionFolder: Dotnet\Core\Filesystem
+  - name: Frenchex.Dev.Filesystem.Lib.Tests
+    language: "C#"
+    template: "fex:test"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib.Tests"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib.Tests"
+    projects: 
+      - name: Frenchex.Dev.Filesystem.Lib
+    solutionFolder: Dotnet\Core\Filesystem
+  - name: Frenchex.Dev.Filesystem.Lib.Abstractions
+    language: "C#"
+    template: "fex:domain.abstractions"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib.Abstractions"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib.Abstractions"
+    solutionFolder: Dotnet\Core\Filesystem
+  - name: Frenchex.Dev.Filesystem.Lib.Infrastructure
+    language: "C#"
+    template: "fex:infra"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib.Infrastructure"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib.Infrastructure"
+    projects:
+      - name: Frenchex.Dev.Filesystem.Lib.Domain
+    packages:
+      - name: Microsoft.Extensions.DependencyInjection.Abstractions
+        version: 7.0.0
+    solutionFolder: Dotnet\Core\Filesystem
+  - name: Frenchex.Dev.Filesystem.Lib.Infrastructure.Tests
+    language: "C#"
+    template: "fex:test"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib.Infrastructure.Tests"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib.Infrastructure.Tests"
+    projects: 
+      - name: Frenchex.Dev.Filesystem.Lib.Infrastructure
+    solutionFolder: Dotnet\Core\Filesystem
+  - name: Frenchex.Dev.Filesystem.Lib.Domain
+    solutionFolder: Dotnet\Core\Filesystem
+    template: "fex:domain"  
+    language: "C#"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib.Domain"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib.Domain"
+    packages:
+      - name: Microsoft.Extensions.DependencyInjection.Abstractions
+        version: 7.0.0
+  - name: Frenchex.Dev.Filesystem.Lib.Domain.Tests
+    solutionFolder: Dotnet\Core\Filesystem
+    template: "fex:test"  
+    language: "C#"
+    template_extra_args: 
+      - "--copyright"
+      - "\"// Stéphane Erard\""
+      - "--param:project"
+      - "Frenchex.Dev.Filesystem.Lib.Domain.Tests"
+      - "--namespace"
+      - "Frenchex.Dev.Filesystem.Lib.Domain.Tests"
+    projects:
+      - name: Frenchex.Dev.Filesystem.Lib.Domain

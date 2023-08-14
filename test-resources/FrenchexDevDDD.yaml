@@ -1,0 +1,51 @@
+templates:
+  - name: ddd-project-lib
+    solution:
+      global:
+        sdkVersion: 7.0.400
+    packages: 
+      - name: Microsoft.Extensions.DependencyInjection.Abstractions
+        version: 7.0.0
+      - name: Microsoft.Extensions.DependencyInjection
+        version: 7.0.0
+    projectKinds:
+      - name: abstractions
+        suffix: .Abstractions
+        tpl: fex:lib.abstractions
+        language: C#
+      - name: lib
+        suffix: .Lib
+        tpl: fex:lib
+        language: C#
+        references: 
+          - name: domain
+          - name: infra
+        packages:
+          - name: Microsoft.Extensions.DependencyInjection.Abstractions
+      - name: domain
+        suffix: .Domain
+        tpl: fex:domain
+        language: C#
+        references:
+          - name: abstractions
+        packages:
+          - name: Microsoft.Extensions.DependencyInjection.Abstractions
+      - name: infra
+        suffix: .Infrastructure
+        tpl: fex:infra
+        packages:
+          - name: Microsoft.Extensions.DependencyInjection.Abstractions
+        references:
+          - name: abstractions
+
+projects:
+  - name: Filesystem
+    template: ddd-project-lib
+  - name: DotnetCSharpProcessWrapper
+    template: ddd-project-lib
+  - name: VagrantCSharp
+    template: ddd-project-lib
+  - name: VagrantOnSteroid
+    template: ddd-project-lib
+    references:
+      - name: VagrantCSharp
