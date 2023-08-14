@@ -3,7 +3,7 @@ import-module $PSScriptRoot/../../New-TemporaryPath.psm1 -Force
 
 Describe "Templates" {
     It "should install templates" {
-        install-templates -all -install
+        Install-DotnetTemplates -all -install
     }
 }
 

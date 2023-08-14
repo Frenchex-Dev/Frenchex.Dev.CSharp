@@ -10,6 +10,13 @@ Open a `Powershell Core` shell and run the following
 git clone git@github.com:Frenchex-Dev/Frenchex.Dev.Csharp.git $env:USERPROFILE\Documents\PowerShell\Modules\FrenchexDev
 ```
 
+## Installing Templates
+
+```powershell
+Import-Module FrenchexDev
+Install-DotnetTemplates -All
+```
+
 ## Usage
 
 Create a `solution.yaml` file in the folder you want suiting your needs
@@ -142,3 +149,5 @@ d----          13/08/2023  6:14 PM                Frenchex.Dev.Filesystem.Lib.Te
 -a---          13/08/2023  6:12 PM           3663 solution.yaml
 -a---          13/08/2023  6:13 PM             47 global.json
 ```
+
+See [Test script](src/Dotnet/Solution/Solution.Tests.ps1) to check usage of this module.

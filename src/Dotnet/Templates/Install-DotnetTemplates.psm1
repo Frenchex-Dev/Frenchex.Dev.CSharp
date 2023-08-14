@@ -1,4 +1,4 @@
-function Install-Templates() {
+function Install-DotnetTemplates() {
     param(
         [switch] $Install,
         [switch] $Uninstall,
