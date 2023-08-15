@@ -180,7 +180,7 @@ Executing
 
 ```powershell
 Import-Module FrenchexDev
-New-DotnetTemplateFromYaml -Yaml templates.yaml` will create the following structure
+New-DotnetTemplateFromYaml -Yaml templates.yaml
 ```
 
 Wil generate following structure :
