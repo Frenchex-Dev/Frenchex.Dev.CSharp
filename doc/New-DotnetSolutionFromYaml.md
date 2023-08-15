@@ -132,5 +132,5 @@ d----          13/08/2023  6:14 PM                Frenchex.Dev.Filesystem.Lib.Te
 -a---          13/08/2023  6:13 PM             47 global.json
 ```
 
-See [Test script](src/Dotnet/Solution/Solution.Tests.ps1) to check usage of this module.
+See [Test script](/src/Dotnet/Solution/Solution.Tests.ps1) to check usage of this module.
 
