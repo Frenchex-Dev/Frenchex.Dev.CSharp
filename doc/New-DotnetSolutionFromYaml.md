@@ -1,5 +1,7 @@
 # New-DotnetSolutionFromYaml
 
+Create a new `solution.yaml` file in the directory of your choice with following structure adapted to your needs
+
 ```yaml
 solution:
   name: Frenchex.Dev
@@ -106,7 +108,7 @@ projects:
       - name: Frenchex.Dev.Filesystem.Lib.Domain
 ```
 
-
+Executing
 
 ```powershell
 Import-Module FrenchexDev

@@ -1,6 +1,6 @@
 # Frenchex Dev
 
-This repository is a set of powershell core scripts which helps to create a Dotnet solution and projects.
+This repository is a set of `powershell core`` scripts which helps to create a Dotnet solution, projects and templates.
 
 ## Installation
 
@@ -21,3 +21,13 @@ Install-DotnetTemplates -All
 
 * [New-DotnetTemplateFromYaml](doc/New-DotnetTemplateFromYaml.md)
 * [New-DotnetSolutionFromYaml](doc/New-DotnetSolutionFromyaml.md)
+
+## Developers
+
+Using Pester to test the module.
+
+```powershell
+Invoke-Pester
+```
+
+Will run the tests.
