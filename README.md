@@ -1,6 +1,6 @@
 # Frenchex Dev
 
-This repository is a set of `powershell core`` scripts which helps to create a Dotnet solution, projects and templates.
+This repository is a set of `powershell core` scripts which helps to create a Dotnet solution, projects and templates.
 
 ## Installation
 
