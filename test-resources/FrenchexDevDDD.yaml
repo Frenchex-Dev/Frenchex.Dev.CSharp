@@ -1,5 +1,162 @@
 templates:
-  - name: ddd-project-lib
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib"
+    identity: "fex:ddd:lib"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib"]
+    language: C#
+    type: project
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Abstractions
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib.abstractions"
+    identity: "fex:ddd:lib.abstractions"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib", "Abstractions"]
+    language: C#
+    type: project
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Domain
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib.domain"
+    identity: "fex:ddd:lib.domain"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib", "Domain"]
+    language: C#
+    type: project
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Infrastructure
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib.infra"
+    identity: "fex:ddd:lib.infra"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib", "Infra"]
+    language: C#
+    type: project
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Tests
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib.tests"
+    identity: "fex:ddd:lib.tests"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib", "Tests"]
+    language: C#
+    type: project
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Domain.Tests
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib.domain.tests"
+    identity: "fex:ddd:lib.domain.tests"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib", "Domain", "Tests"],
+    language: C#
+    type: project
+  - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Infrastructure.Tests
+    parameters:
+      - name: license
+        short: l
+        type: parameter
+        defaultValue: // Your Licensing
+        replaces: (licensing)
+      - name: project
+        short: project
+        type: parameter
+        defaultValue: Your Project
+        replaces: (project)
+      - name: namespace
+        short: ns
+        type: parameter
+        defaultValue: Your Namespace
+        replaces: (namespace)
+    shortName: "fex:ddd:lib.infra.tests"
+    identity: "fex:ddd:lib.infra.tests"
+    classifications: ["Frenchex", "Dev", "DDD", "Lib", "Infra", "Tests"]
+    language: C#
+    type: project
+
+
+solutionTemplates:
+  - name: ddd-lib
     solution:
       global:
         sdkVersion: 7.0.400
@@ -8,6 +165,162 @@ templates:
         version: 7.0.0
       - name: Microsoft.Extensions.DependencyInjection
         version: 7.0.0
+    templates:
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib"
+        identity: "fex:ddd:lib"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib"]
+        language: C#
+        type: project
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Abstractions
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib.abstractions"
+        identity: "fex:ddd:lib.abstractions"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib", "Abstractions"]
+        language: C#
+        type: project
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Domain
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib.domain"
+        identity: "fex:ddd:lib.domain"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib", "Domain"]
+        language: C#
+        type: project
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Infrastructure
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib.infra"
+        identity: "fex:ddd:lib.infra"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib", "Infra"]
+        language: C#
+        type: project
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Tests
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib.tests"
+        identity: "fex:ddd:lib.tests"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib", "Tests"]
+        language: C#
+        type: project
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Domain.Tests
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib.domain.tests"
+        identity: "fex:ddd:lib.domain.tests"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib", "Domain", "Tests"],
+        language: C#
+        type: project
+      - name: Frenchex.Dev.DotnetCore.Templates.DDD.Lib.Infrastructure.Tests
+        parameters:
+          - name: license
+            short: l
+            type: parameter
+            defaultValue: // Your Licensing
+            replaces: (licensing)
+          - name: project
+            short: project
+            type: parameter
+            defaultValue: Your Project
+            replaces: (project)
+          - name: namespace
+            short: ns
+            type: parameter
+            defaultValue: Your Namespace
+            replaces: (namespace)
+        shortName: "fex:ddd:lib.infra.tests"
+        identity: "fex:ddd:lib.infra.tests"
+        classifications: ["Frenchex", "Dev", "DDD", "Lib", "Infra", "Tests"]
+        language: C#
+        type: project
+
     projectKinds:
       - name: abstractions
         suffix: .Abstractions
@@ -38,7 +351,10 @@ templates:
         references:
           - name: abstractions
 
-projects:
+global:
+  namespace: Frenchex.Dev
+
+solutions:
   - name: Filesystem
     template: ddd-project-lib
   - name: DotnetCSharpProcessWrapper

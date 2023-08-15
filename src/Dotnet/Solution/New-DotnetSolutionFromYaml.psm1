@@ -51,6 +51,7 @@ function New-DotnetSolutionFromYaml () {
         foreach($linkedProject in $projectDescription.projects) {
             Write-host "Linking Project $($projectDescription.name) to Project $($linkedProject.name) in Solution $($solutionDescription.solution.name)"
             Update-DotnetProject `
+                -AddProjectReference `
                 -CsProj "$($ProjectDescription.name)\\$($ProjectDescription.name).csproj" `
                 -DependencyCsProj "$($linkedProject.name)\\$($linkedProject.name).csproj"
         }
