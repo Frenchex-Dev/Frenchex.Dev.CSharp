@@ -20,7 +20,7 @@ Install-DotnetTemplates -All
 ## Functions
 
 * [New-DotnetTemplateFromYaml](doc/New-DotnetTemplateFromYaml.md)
-* [New-DotnetSolutionFromYaml](doc/New-DotnetSolutionFromyaml.md)
+* [New-DotnetSolutionFromYaml](doc/New-DotnetSolutionFromYaml.md)
 
 ## Developers
 
