@@ -193,12 +193,13 @@ function New-DotnetTemplateProject(){
 # (project-name)
 
 ```
-(copyright)
+(licensing)
 ```
-    
+
 ## End-user Installation
 
-## Developer Installation    
+## Developer Installation
+
 "@
 
     $readme | out-file $name/README.md

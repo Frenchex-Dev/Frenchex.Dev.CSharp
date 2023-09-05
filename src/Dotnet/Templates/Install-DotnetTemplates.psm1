@@ -33,4 +33,4 @@ function Install-DotnetTemplates() {
     }
 }
 
-Export-ModuleMember -Function Install-Templates
+Export-ModuleMember -Function Install-DotnetTemplates

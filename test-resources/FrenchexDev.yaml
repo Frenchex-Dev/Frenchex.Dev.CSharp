@@ -8,7 +8,7 @@ projects:
     language: "C#"
     template: "fex:lib"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib"
@@ -25,7 +25,7 @@ projects:
     language: "C#"
     template: "fex:test"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib.Tests"
@@ -38,7 +38,7 @@ projects:
     language: "C#"
     template: "fex:domain.abstractions"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib.Abstractions"
@@ -49,7 +49,7 @@ projects:
     language: "C#"
     template: "fex:infra"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib.Infrastructure"
@@ -65,7 +65,7 @@ projects:
     language: "C#"
     template: "fex:test"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib.Infrastructure.Tests"
@@ -79,7 +79,7 @@ projects:
     template: "fex:domain"  
     language: "C#"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib.Domain"
@@ -93,7 +93,7 @@ projects:
     template: "fex:test"  
     language: "C#"
     template_extra_args: 
-      - "--copyright"
+      - "--license"
       - "\"// Stéphane Erard\""
       - "--param:project"
       - "Frenchex.Dev.Filesystem.Lib.Domain.Tests"
